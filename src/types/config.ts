@@ -5,5 +5,6 @@ export interface EnviromentInterface {
     MONGODB_PASS_AUTH: string | undefined,
     JWT_SECRET: string | undefined,
     JWT_ALGORITHM: string | undefined,
-    JWT_EXPIRE: string | undefined
+    JWT_EXPIRE: string | undefined,
+    // GOOGLE_APIKEY: string | undefined
 }

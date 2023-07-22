@@ -12,4 +12,6 @@ export const environment: EnviromentInterface = {
     JWT_SECRET: process.env.JWT_SECRET,
     JWT_ALGORITHM: process.env.JWT_ALGORITHM,
     JWT_EXPIRE: process.env.JWT_EXPIRE
+
+    // GOOGLE_APIKEY: process.env.GOOGLE_APIKEY
 }
