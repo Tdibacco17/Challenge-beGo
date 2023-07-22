@@ -4,7 +4,8 @@ import { environment } from './utils/config';
 import { connectDB } from './db';
 
 import { router as userRoutes } from "./routes/userRoutes";
-import { router as trackRoutes} from "./routes/truckRoutes"
+import { router as trackRoutes} from "./routes/truckRoutes";
+import { router as pointRoutes} from "./routes/pointRoutes";
 
 const server = express();
 
@@ -16,6 +17,7 @@ server.use(cors());
 //acceso a rutas
 server.use("/", userRoutes);
 server.use("/", trackRoutes);
+server.use("/", pointRoutes);
 
 //conexiones
 let PORT = 3000;
