@@ -18,7 +18,12 @@ export const authMiddleware = (req: AuthRequest, res: Response, next: NextFuncti
 
     try {
         const decoded = jwt.verify(token, environment.JWT_SECRET) as JwtPayload;
-        req.user = decoded; 
+
+        if (!decoded || typeof decoded !== "object" || Array.isArray(decoded)) {
+            return res.status(401).json({ error: "Token de acceso inválido" });
+        }
+
+        req.user = decoded;
         return next();
     } catch (error) {
         return res.status(401).json({ error: "Token de acceso inválido" });
