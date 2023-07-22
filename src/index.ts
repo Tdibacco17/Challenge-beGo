@@ -2,7 +2,8 @@ import express from 'express';
 import cors from "cors";
 import { environment } from './utils/config';
 import { connectDB } from './db';
-// import { router as adminDashboardRoutes } from "./src/routes/adminDashboardRoute.js"
+
+import { router as userRoutes } from "./routes/userRoutes";
 
 const server = express();
 
@@ -12,7 +13,7 @@ server.use(express.json());
 server.use(cors());
 
 //acceso a rutas
-// server.use("/", userRoutes);
+server.use("/", userRoutes);
 
 //conexiones
 let PORT = 3000;
