@@ -7,6 +7,7 @@ import { router as userRoutes } from "./routes/userRoutes";
 import { router as trackRoutes} from "./routes/truckRoutes";
 import { router as pointRoutes} from "./routes/pointRoutes";
 import { router as routeRoutes} from "./routes/routeRoutes";
+import { router as routeOrders} from "./routes/orderRoutes";
 
 const server = express();
 
@@ -20,6 +21,7 @@ server.use("/", userRoutes);
 server.use("/", trackRoutes);
 server.use("/", pointRoutes);
 server.use("/", routeRoutes);
+server.use("/", routeOrders);
 
 //conexiones
 let PORT = 3000;
