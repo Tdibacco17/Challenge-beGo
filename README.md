@@ -1,7 +1,5 @@
 # Challenge beGo
 
-**Repositorio:** https://github.com/Tdibacco17/challenge_beGo.git
-
 ## Descripción
 
 La API beGo es una plataforma de gestión de órdenes de transporte que permite a los usuarios crear, actualizar, eliminar y asignar camiones a órdenes. La API se ha desarrollado utilizando Node.js y Express para el servidor, y MongoDB para almacenar los datos. Además, se ha utilizado Mongoose como ORM para interactuar con la base de datos MongoDB.
@@ -78,8 +76,6 @@ La API beGo proporciona una serie de endpoints para gestionar las operaciones re
 
 <br>
 <br>
-
-<hr>
 
 ## Desarrollo
 
